@@ -4,7 +4,7 @@ nocite: |
   @James:2015jo, @Gonzalez:uh, @James:2015hu, @Anonymous:vy
 ...
 
-Note: you can read this document in [HTML](https://cs267.github.io/hw0/) or [PDF](https://cs267.github.io/hw0/index.pdf). And the source is available at [GitHub](https://github.com/cs267/hw0).
+Note: you can read this document in [HTML](https://cs267.github.io/hw0/) or [PDF](https://cs267.github.io/hw0/index.pdf). And the source is available at [GitHub](https://github.com/cs267/hw0). Also you can also see the original question ([HTML](https://cs267.github.io/hw0/question.html)|[PDF](https://cs267.github.io/hw0/question.pdf)).
 
 # Biography
 
