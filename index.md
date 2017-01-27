@@ -14,7 +14,7 @@ Note: you can read this document in [HTML](https://cs267.github.io/hw0/) or [PDF
 
 - what I'd like to get out of the class: how to apply parallel programming in simulation/data analysis in Physics that possibly involves non-linear differential equations (like General Relativity). And in general I want to gain more solid programming skills.
 
-- background: I learnt C a decade ago without using it since then. I know some Python, bash, make, etc. I am also interested in Haskell, but isn't too familiar with it. Programming and CS in general is always a secret passion of mine. I once considered minored in CS in undergraduate but my dual degrees in Mathematics and Physics and a semester of exchange program (to here in UCB) took away all my available time. Knowing that there is a Designated Emphasis ("graduate minor") in Computational Science and Engineering, where CS267 is mandatory, I want to give it a try to fulfill my dream. But because of my weak background in CS, I am not sure I can follow through.
+- background: I learnt C++ about a decade ago without using it since then. I know some Python, bash, make, etc. I am also interested in Haskell, but isn't too familiar with it. Programming and CS in general is always a secret passion of mine. I once considered minored in CS in undergraduate but my dual degrees in Mathematics and Physics and a semester of exchange program (to here in UCB) took away all my available time. Knowing that there is a Designated Emphasis ("graduate minor") in Computational Science and Engineering, where CS267 is mandatory, I want to give it a try to fulfill my dream. But because of my weak background in CS, I am not sure I can follow through.
 
 # Examining the Parallel Computing Behind "Interstellar"
 
