@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="dcterms.date" content="2017-01-26">
   <title>Spring 2017 UCB CS267 HW0</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="https://ickc.github.io/markdown-latex-css/css/common.css">
@@ -16,7 +15,7 @@
 <body>
 <header>
 <h1 class="title">Spring 2017 UCB CS267 HW0</h1>
-<p class="date">January 26, 2017</p>
+<p class="date">February  2, 2017</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -66,7 +65,7 @@
 </ul>
 <p>To conclude, because the goal of Interstellar is for visual effects which emphasize to be visually pleasing rather than absolute throughout, a different technique than a typical astrophysical research is employed. And since the ray tracing algorithm allows each pixel to be calculated independently, the difficulty of parallel computing is not high. So a cluster is employed, involving usually hundreds of 20 CPU cores machines at a time. The total computer time used is massive, and data generated is enormous. In the end they did a good job and generally received praises from both the scientific and cinematic community. It achieved the goal of never-seen-before renderings of super massive, rapidly rotating blackholes and wormholes to the mass public, while being as scientifically accurate as possible (albeit some scientific accuracy is sacrificed — color changed due to relativistic effect is removed for aesthetic reasons). Their revenues also reflect their success.</p>
 <p>Regarding physical results, we wish anyone will have such a chance to compare it. Before then this is our best chance to see such beauties up close.</p>
-<p>And a noteworthy takeaway is, if there is an algorithm (in this case, per-pixel ray-tracing) so that each calculation is independent of each other, this drastically reduces any difficulties in parallel computing.</p>
+<p>After some lectures, I found that this is called embarassingly parallel, because the ray-tracing of each pixel is independent of each other, and hence there can be no communication between pixels at all. However, given that per pixel rendering is on the order of 10 hours, the ray-tracing of each pixel still requires parallel computing (say, per computer in the network) heavily. Their paper did not discuss this aspect however. My guess is that it will not be “embarassing parallel” in this case. Because it is ray tracing from this pixel accross <em>all</em> directions, and for each of the outgoing ray, it requires a calculation of the spacetime curvature along the whole path. So there can be a lot of locality in the simulation, which allows a different stratdegy of devide and conquer. For example, the paper has discussed the differences in the curvature also matters — the higher the curvature, the more non-linear the effect is, and the finer the steps to take in order to obtain acurate results.</p>
 <h1 id="references" class="unnumbered">References</h1>
 <div id="refs" class="references">
 <div id="ref-James:2015jo">

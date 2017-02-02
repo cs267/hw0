@@ -42,6 +42,6 @@ To conclude, because the goal of Interstellar is for visual effects which emphas
 
 Regarding physical results, we wish anyone will have such a chance to compare it. Before then this is our best chance to see such beauties up close.
 
-And a noteworthy takeaway is, if there is an algorithm (in this case, per-pixel ray-tracing) so that each calculation is independent of each other, this drastically reduces any difficulties in parallel computing.
+After some lectures, I found that this is called embarassingly parallel, because the ray-tracing of each pixel is independent of each other, and hence there can be no communication between pixels at all. However, given that per pixel rendering is on the order of 10 hours, the ray-tracing of each pixel still requires parallel computing (say, per computer in the network) heavily. Their paper did not discuss this aspect however. My guess is that it will not be "embarassing parallel" in this case. Because it is ray tracing from this pixel accross *all* directions, and for each of the outgoing ray, it requires a calculation of the spacetime curvature along the whole path. So there can be a lot of locality in the simulation, which allows a different stratdegy of devide and conquer. For example, the paper has discussed the differences in the curvature also matters — the higher the curvature, the more non-linear the effect is, and the finer the steps to take in order to obtain acurate results.
 
 # References
