@@ -36,7 +36,7 @@ pandocArgReadmeGitHub := $(pandocArgCommon) --toc-depth=2 -s -t markdown_github 
 all: $(MD2PDF) $(MD2HTML)
 	echo $(MD)
 
-clean:
+Clean:
 	rm -f  $(MD2PDF) $(MD2HTML)
 
 ####################################################################################################################################
